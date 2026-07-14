@@ -1,6 +1,6 @@
 const banner = document.getElementById("banner");
 const titles = {
-	"/mwutil/": "Welcome to mwutil",
+	"/mwutil": "Welcome to mwutil",
 	"/mwutil/tools": "mwutil tools index"
 };
 const desc = {};
