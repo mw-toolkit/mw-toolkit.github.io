@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mwutil</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/alignment.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	<div class="row">
+		<button id="encbtn">Encode</button>
+		<button id="copy">Copy</button>
+		<a href="/tools/base64-decode/">Decode something</a>
+	</div>
+
+	<div class="row flexone">
+		<div class="column">
+			<textarea id="input" placeholder="Input"></textarea>
+		</div>
+		<div class="column">
+			<textarea id="output" placeholder="Output"></textarea>
+		</div>
+	</div>
+
+	<script type="module" src="/assets/js/util.js"></script>
+	<script type="module" src="/tools/base64-encode/b64-encode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mwutil</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/alignment.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	<input id="input-file" type="file" />
+
+	<div class="row flexone">
+		<div class="column">
+			<textarea id="input" placeholder="Insert Markdown here"></textarea>
+		</div>
+		<div class="column">
+			<div id="content"></div>
+		</div>
+	</div>
+
+	<script type="module" src="/tools/markdown-renderer/markdown-renderer.js"></script>
+</body>
+
+</html>
+
+<style>
+	.column {
+		width: 50%;
+	}
+</style>

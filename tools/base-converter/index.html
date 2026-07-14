@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mwutil</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	<p>This tool only convert bases between 2 and 64</p>
+
+	<span>Enter number: </span> <input type="text" id="input" /> <br>
+	<span>From base: </span> <input type="number" id="from" /> <br>
+	<span>To base: </span> <input type="number" id="to" /> <br>
+
+	</br>
+	<button id="convert">Convert</button>
+	<button id="copy">Copy</button>
+
+	<p id="result"></p>
+
+	<script type="module" src="/tools/base-converter/base-convert.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+[
+	{
+		"id": "base64-decode",
+		"title": "Base64 Decoder",
+		"description": "decode base64 encoded text"
+	},
+	{
+		"id": "base64-encode",
+		"title": "Base64 Encoder",
+		"description": "encode plain text to base64"
+	},
+	{
+		"id": "luhn-generator",
+		"title": "Luhn Check Digit Generator",
+		"description": "generate a check digit using luhn algorithm"
+	},
+	{
+		"id": "luhn-validator",
+		"title": "Luhn Check Digit Validator",
+		"description": "validate a check digit using luhn algorithm"
+	},
+	{
+		"id": "markdown-renderer",
+		"title": "Markdown Renderer",
+		"description": "render markdown"
+	},
+	{
+		"id": "rng",
+		"title": "Random Number Generator",
+		"description": "generate a random number within a specified range"
+	},
+	{
+		"id": "shannon-entropy",
+		"title": "Shannon Entropy Calculator",
+		"description": "calculate a string randomness using shannon entropy"
+	},
+	{
+		"id": "slug-generator",
+		"title": "Slug Generator",
+		"description": "convert text into a url-friendly slug"
+	},
+	{
+		"id": "url-decode",
+		"title": "URL Decoder",
+		"description": "decode url-safe format to plain text"
+	},
+	{
+		"id": "url-encode",
+		"title": "URL Encoder",
+		"description": "encode plain text to url-safe format"
+	},
+	{
+		"id": "uuid-generator",
+		"title": "UUID Generator",
+		"description": "generate UUID"
+	},
+	{
+		"id": "base-converter",
+		"title": "Base Converter",
+		"description": "convert a number between bases"
+	}
+]
