@@ -1,4 +1,4 @@
-import { luhngen } from "/assets/js/util.js"
+import { luhngen } from "/mwutil/assets/js/util.js"
 
 const input = document.getElementById("input");
 const validate = document.getElementById("validate");

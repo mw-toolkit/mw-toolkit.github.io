@@ -1,4 +1,4 @@
-import { luhngen, toClipboard } from "/assets/js/util.js"
+import { luhngen, toClipboard } from "/mwutil/assets/js/util.js"
 
 const input = document.getElementById("input");
 const generate = document.getElementById("generate");

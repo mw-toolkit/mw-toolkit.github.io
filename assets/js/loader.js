@@ -1,17 +1,17 @@
 const banner = document.getElementById("banner");
 const titles = {
-	"/": "Welcome to mwutil",
-	"/tools": "mwutil tools index"
+	"/mwutil/": "Welcome to mwutil",
+	"/mwutil/tools": "mwutil tools index"
 };
 const desc = {};
 const links = {
-	"Home": "/",
-	"Tools": "/tools"
+	"Home": "/mwutil/",
+	"Tools": "/mwutil/tools"
 };
 
 let tools = null;
 window.tools_index = (async () => {
-	const res = await fetch("/tools/tools_index.json");
+	const res = await fetch("/mwutil/tools/tools_index.json");
 
 	if (!res.ok) {
 		throw new Error(`tools_index.json returned: ${res.status}`);
@@ -26,11 +26,11 @@ async function load() {
 	await window.tools_index;
 
 	tools.forEach(tool => {
-		titles["/tools/" + tool.id] = tool.title;
-		desc["/tools/" + tool.id] = tool.description
+		titles["/mwutil/tools/" + tool.id] = tool.title;
+		desc["/mwutil/tools/" + tool.id] = tool.description
 	});
 
-	const path = window.location.pathname.replace(/\/$/, "") || "/";
+	const path = window.location.pathname.replace(/\/$/, "") || "/mwutil/";
 
 	const title_el = document.createElement("h1");
 	title_el.innerHTML = titles[path];
