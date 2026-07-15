@@ -1,12 +1,15 @@
 const banner = document.getElementById("banner");
 const titles = {
 	"/mwutil": "Welcome to mwutil",
-	"/mwutil/tools": "mwutil tools index"
+	"/mwutil/tools": "mwutil tools index",
 };
 const desc = {};
+
+// ( links, open_in_new_window )
 const links = {
-	"Home": "/mwutil/",
-	"Tools": "/mwutil/tools"
+	"Home": ["/mwutil", false],
+	"Tools": ["/mwutil/tools", false],
+	"Source": ["https://github.com/Bimasakti1024/mwutil", true]
 };
 
 let tools = null;
@@ -48,9 +51,19 @@ async function load() {
 	banner.appendChild(links_el);
 
 	for (const key in links) {
+		const link = links[key];
+		const href = link[0];
+		const open_in_new_window = link[1];
+
 		const a = document.createElement("a");
-		a.href = links[key];
+		a.href = href;
 		a.innerHTML = key;
+
+		if (open_in_new_window) {
+			a.target = "_blank";
+			a.rel = "noopener noreferrer";
+		}
+
 		links_el.appendChild(a);
 	}
 }
