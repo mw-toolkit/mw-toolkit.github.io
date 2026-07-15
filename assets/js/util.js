@@ -5,6 +5,11 @@ export function toClipboard(s) {
 	});
 }
 
+export function arrayIntersection(a, b) {
+	return a.filter((v) => b.includes(v));
+}
+
+// Luhn algorithm
 export function luhngen(num) {
 	let sum = 0;
 	for (const [i, v] of num.reverse().entries()) {
