@@ -10,7 +10,7 @@ export function arrayIntersection(a, b) {
 }
 
 // Luhn algorithm
-export function luhngen(num) {
+export function luhn(num) {
 	let sum = 0;
 	for (const [i, v] of num.reverse().entries()) {
 		let n = v;

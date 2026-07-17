@@ -1,4 +1,4 @@
-import { luhngen, toClipboard } from "/mwutil/assets/js/util.js"
+import { luhn, toClipboard } from "/assets/js/util.js"
 
 const input = document.getElementById("input");
 const generate = document.getElementById("generate");
@@ -13,7 +13,7 @@ generate.addEventListener("click", () => {
 
 	const num = cleaned.map(n => Number(n));
 
-	const { sum, checkDigit } = luhngen(num);
+	const { sum, checkDigit } = luhn(num);
 	fnumber = cleaned.join('') + checkDigit;
 
 	document.getElementById("sum").innerHTML = "Sum: " + sum;

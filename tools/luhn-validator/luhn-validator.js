@@ -1,4 +1,4 @@
-import { luhngen } from "/mwutil/assets/js/util.js"
+import { luhn } from "/assets/js/util.js"
 
 const input = document.getElementById("input");
 const validate = document.getElementById("validate");
@@ -12,7 +12,7 @@ validate.addEventListener("click", () => {
 	const num = cleaned.map(n => Number(n));
 	const pcheckDigit = num.pop();
 
-	const { sum, checkDigit } = luhngen(num);
+	const { sum, checkDigit } = luhn(num);
 
 	document.getElementById("pcheckd").innerHTML = "Provided check digit: " + pcheckDigit;
 	document.getElementById("sum").innerHTML = "Sum: " + sum;

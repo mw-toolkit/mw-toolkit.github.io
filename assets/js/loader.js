@@ -1,20 +1,20 @@
 const banner = document.getElementById("banner");
 const titles = {
-	"/mwutil": "Welcome to mwutil",
-	"/mwutil/tools": "mwutil tools index",
+	"/": "Welcome to mw-toolkit",
+	"/tools": "mw-toolkit tools index",
 };
 const desc = {};
 
 // ( links, open_in_new_window )
 const links = {
-	"Home": ["/mwutil", false],
-	"Tools": ["/mwutil/tools", false],
-	"Source": ["https://github.com/Bimasakti1024/mwutil", true]
+	"Home": ["/", false],
+	"Tools": ["/tools", false],
+	"Source": ["https://github.com/mw-toolkit/mw-toolkit.github.io", true]
 };
 
 let tools = null;
 window.tools_index = (async () => {
-	const res = await fetch("/mwutil/tools/tools_index.json");
+	const res = await fetch("/tools/tools_index.json");
 
 	if (!res.ok) {
 		throw new Error(`tools_index.json returned: ${res.status}`);
@@ -29,15 +29,20 @@ async function load() {
 	await window.tools_index;
 
 	tools.forEach(tool => {
-		titles["/mwutil/tools/" + tool.id] = tool.title;
-		desc["/mwutil/tools/" + tool.id] = tool.description
+		titles["/tools/" + tool.id] = tool.title;
+		desc["/tools/" + tool.id] = tool.description
 	});
 
-	const path = window.location.pathname.replace(/\/$/, "") || "/mwutil/";
+	const path = window.location.pathname.replace(/\/$/, "") || "/";
+	const title = titles[path];
 
 	const title_el = document.createElement("h1");
 	title_el.innerHTML = titles[path];
 	banner.appendChild(title_el);
+
+	if (title !== titles["/"]) {
+		document.getElementsByTagName("title")[0].innerHTML = "mw-toolkit - " + title;
+	}
 
 	if (desc[path]) {
 		const desc_el = document.createElement("p");

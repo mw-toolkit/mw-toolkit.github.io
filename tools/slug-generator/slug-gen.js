@@ -1,4 +1,4 @@
-import { toClipboard } from "/mwutil/assets/js/util.js";
+import { toClipboard } from "/assets/js/util.js";
 
 const result = document.getElementById("result");
 

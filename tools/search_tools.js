@@ -21,7 +21,7 @@ async function show_tools(s) {
 	filtered.forEach(tool => {
 		var entry = document.createElement("li");
 		var link = document.createElement("a");
-		link.href = "/mwutil/tools/" + tool.id;
+		link.href = "/tools/" + tool.id;
 		link.innerHTML = `${tool.title} (${tool.id}) - ${tool.description}`;
 		entry.appendChild(link);
 		toolsl.appendChild(entry);

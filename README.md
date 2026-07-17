@@ -1,4 +1,4 @@
-# mwutil
+# mw-toolkit
 
 a lightweight, open source, growing collection of small web-based utilities.
 

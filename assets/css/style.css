@@ -14,7 +14,7 @@ html {
 
 @font-face {
 	font-family: 'JetBrains Mono';
-	src: url('/mwutil/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
+	src: url('/mw-toolkit/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2') format('woff2');
 	font-weight: 100;
 	font-display: swap;
 }

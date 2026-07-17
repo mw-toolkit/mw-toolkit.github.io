@@ -1,4 +1,4 @@
-import { convertBase, toClipboard } from "/mwutil/assets/js/util.js";
+import { convertBase, toClipboard } from "/assets/js/util.js";
 
 const result_el = document.getElementById("result");
 
