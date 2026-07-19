@@ -58,5 +58,10 @@
 		"id": "base-converter",
 		"title": "Base Converter",
 		"description": "convert a number between bases"
+	},
+	{
+	  "id": "regex-tester",
+		"title": "Regex Tester",
+		"description": "test regex"
 	}
 ]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mw-toolkit</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+	<link rel="stylesheet" href="/assets/css/alignment.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	<input type="text"id="regexinput" placeholder="Regex"></input>
+
+	<div class="row flexone">
+		<div class="column">
+			<textarea id="input" placeholder="Input"></textarea>
+		</div>
+		<div class="column">
+		    <p id="output-info"></p>
+			<div id="output"></div>
+		</div>
+	</div>
+
+	<script type="module" src="/assets/js/util.js"></script>
+	<script type="module" src="/tools/regex-tester/regex-tester.js"></script>
+</body>
+
+</html>
+
+
+<style>
+	.column {
+		width: 50%;
+	}
+
+	.match {
+	    background-color: #1F1F2F;
+		margin: 1rem;
+		padding: .5rem;
+	}
+
+	.match p {
+	    margin: 0;
+	}
+
+	.index {
+		font-size: 80%;
+	}
+</style>
