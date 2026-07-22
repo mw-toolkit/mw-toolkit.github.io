@@ -60,8 +60,13 @@
 		"description": "convert a number between bases"
 	},
 	{
-	  "id": "regex-tester",
+	 	"id": "regex-tester",
 		"title": "Regex Tester",
 		"description": "test regex"
+	},
+	{
+		"id": "frame-extractor",
+		"title": "Frame Extractor",
+		"description": "extract a specific frame in a video"
 	}
 ]
