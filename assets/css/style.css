@@ -56,6 +56,20 @@ textarea {
 	background-color: grey;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #aaaaaa;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #212121;
+}
+
 #banner {
 	align-items: center;
 	margin-bottom: 1rem;

@@ -68,5 +68,10 @@
 		"id": "frame-extractor",
 		"title": "Frame Extractor",
 		"description": "extract a specific frame in a video"
+	},
+	{
+		"id": "timezone-overlap",
+		"title": "Timezone Overlap Finder",
+		"description": "find an overlap between timezones"
 	}
 ]
