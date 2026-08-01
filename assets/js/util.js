@@ -83,3 +83,12 @@ export function timeToDecimal(str) {
 
 	return hour + minute / 60;
 }
+
+export function timeOffset(local, offset) {
+	let raw = local - offset
+	let hour = ((raw % 24) + 24) % 24   // handles negative raw safely
+	return {
+		hour: hour,
+		day_offset: Math.round(raw / 24)
+	};
+}
