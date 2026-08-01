@@ -67,16 +67,19 @@ export function convertBase(str, fromBaseNum, toBaseNum) {
 
 // Time
 export function timeToDecimal(str) {
-	const match = str.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+	const match = str.match(/(\d{1,2}):(\d{2})\s*(AM|PM)?/i);
 	if (!match) return null;
 
 	let [, hour, minute, period] = match;
 	hour = parseInt(hour, 10);
 	minute = parseInt(minute, 10);
-	period = period.toUpperCase();
 
-	if (period === 'PM' && hour !== 12) hour += 12;
-	if (period === 'AM' && hour === 12) hour = 0;
+	if (period) {
+		period = period.toUpperCase();
+
+		if (period === 'PM' && hour !== 12) hour += 12;
+		if (period === 'AM' && hour === 12) hour = 0;
+	}
 
 	return hour + minute / 60;
 }
