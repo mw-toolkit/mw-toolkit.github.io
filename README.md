@@ -2,25 +2,11 @@
 
 a lightweight, open source, growing collection of small web-based utilities.
 
-## Adding a tool
+**[mw-toolkit.github.io](https://mw-toolkit.github.io)**
 
-Each tool lives in its own folder under `tools/`, named with a lowercase, hyphenated slug (e.g. `base64-encode`, `uuid-generator`).
+## Contributing
 
-Register the tool by adding an entry to `tools_index.json`:
-
-```json
-{
-    "id": "your-tool-slug",
-    "title": "Your Tool Title",
-    "description": "a short, lowercase description"
-}
-```
-
-Naming conventions:
-
-- slugs: lowercase, hyphenated, `{thing}-{action}` where possible (e.g. `base64-encode`, not `encode-base64`), when a qualifier is needed for clarity, `{noun}-{thing}-{action}` (e.g `random-topic-generator`)
-- `title`: capitalized, human-readable
-- `description`: lowercase, terse, no trailing period
+please read [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## Third-party
 

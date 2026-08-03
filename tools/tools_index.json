@@ -77,6 +77,6 @@
 	{
 		"id": "random-topic-generator",
 		"title": "Random Topic Generator",
-		"description": "generate random topic from a database"
+		"description": "generate a random topic from a dataset"
 	}
 ]

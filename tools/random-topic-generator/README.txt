@@ -7,7 +7,6 @@ chunk, please increment the TOPICS_CHUNK_COUNT variable in
 random-topic-gen.js file at around line 3.
 
 please remember to increment it only when adding a new chunk,
-not entries, and to name the chunk using "CHUNK_NUM.json" format,
-like 0.json, 1.json, 2.json.
+not entries, and to name the file conveniently.
 
 thank you :)
