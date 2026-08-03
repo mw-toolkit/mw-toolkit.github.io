@@ -85,10 +85,14 @@ export function timeToDecimal(str) {
 }
 
 export function timeOffset(local, offset) {
-	let raw = local - offset
+	let raw = local - offset;
 	let hour = ((raw % 24) + 24) % 24   // handles negative raw safely
 	return {
 		hour: hour,
 		day_offset: Math.floor(raw / 24)
 	};
+}
+
+function zeroPad(n, width = 2) {
+    return String(n).padStart(width, '0');
 }
