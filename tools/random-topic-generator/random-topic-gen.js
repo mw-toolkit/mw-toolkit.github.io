@@ -13,7 +13,7 @@ genbtn.addEventListener("click", () => {
 	let random = Math.floor(Math.random() * TOPICS_CHUNK_COUNT + 1);
 
 	try {
-		fetch(`/tools/random-topic-generator/topics/${random}.json`)
+		fetch(`/tools/random-topic-generator/topics/topics-chunk-${random}.json`)
 			.then(response => response.json())
 			.then(topics => {
 				let i = Math.floor(Math.random() * (topics.length - 1));
