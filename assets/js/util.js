@@ -93,6 +93,21 @@ export function timeOffset(local, offset) {
 	};
 }
 
-function zeroPad(n, width = 2) {
+export function zeroPad(n, width = 2) {
     return String(n).padStart(width, '0');
+}
+
+export function decimalToTime(n) {
+	let hour = Math.floor((n + 24) % 24);
+	let minute = Math.round((n - Math.floor(n)) * 60);
+	if (minute == 60) {
+		minute = 0;
+		hour = (hour + 1) % 24;
+	}
+	let period = hour >= 12 ? "PM" : "AM";
+
+	let displayHour = hour % 12;
+	if (displayHour === 0) displayHour = 12;
+
+	return `${zeroPad(displayHour)}:${zeroPad(minute)} ${period}`;
 }

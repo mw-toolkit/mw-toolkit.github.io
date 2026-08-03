@@ -1,4 +1,4 @@
-import { timeToDecimal, timeOffset } from "/assets/js/util.js";
+import { timeToDecimal, decimalToTime, timeOffset } from "/assets/js/util.js";
 
 const calculate_el = document.getElementById("calculate");
 
@@ -55,6 +55,13 @@ calculate_el.addEventListener("click", () => {
 
 		const min = timezone_overlap[0];
 		const max = timezone_overlap[timezone_overlap.length - 1];
-		overlapCols[i].innerHTML = `${min.hour} -> ${max.hour} ${min.day_offset} -> ${max.day_offset}`;
+
+		let day_offset_note = "";
+		if (min.day_offset < 0) {
+			day_offset_note = "(started yesterday)";
+		} else if (max.day_offset > 0) {
+			day_offset_note = "(crosses tomorrow)";
+		}
+		overlapCols[i].innerHTML = `${decimalToTime(min.hour)} -> ${decimalToTime(max.hour)} ${day_offset_note}`;
 	}
 });
