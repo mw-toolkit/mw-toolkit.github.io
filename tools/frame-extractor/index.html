@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mw-toolkit</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	</br>
+
+	<input type="file" id="vidupload" capture />
+	<br>
+
+	<span>Get frame at second: </span>
+	<input type="number" id="second" />
+
+	<br>
+	<button id="capture">Get frame</button>
+
+	<br>
+	<video id="player" width="640" height="480" controls></video>
+
+	<br>
+	<canvas id="canvas" hidden></canvas>
+
+	<script src="/tools/frame-extractor/frame-extractor.js"></script>
+</body>
+
+</html>

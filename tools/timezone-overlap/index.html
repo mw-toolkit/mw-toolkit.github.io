@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mw-toolkit</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	</br>
+
+	<table id="timezones">
+		<tr>
+			<th>Timezone offset (UTC+n)</th>
+			<th>Start</th>
+			<th>End</th>
+			<th>Overlap</th>
+			<th>Action</th>
+		</tr>
+	</table>
+
+	<button id="addtimezone">Add timezone</button>
+	<button id="calculate">Calculate</button>
+
+	<script src="/tools/timezone-overlap/timezone-table.js"></script>
+	<script type="module" src="/tools/timezone-overlap/timezone-overlap.js"></script>
+</body>
+
+</html>
