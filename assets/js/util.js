@@ -89,6 +89,6 @@ export function timeOffset(local, offset) {
 	let hour = ((raw % 24) + 24) % 24   // handles negative raw safely
 	return {
 		hour: hour,
-		day_offset: Math.round(raw / 24)
+		day_offset: Math.floor(raw / 24)
 	};
 }
