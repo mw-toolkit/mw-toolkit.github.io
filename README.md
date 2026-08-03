@@ -18,7 +18,7 @@ Register the tool by adding an entry to `tools_index.json`:
 
 Naming conventions:
 
-- slugs: lowercase, hyphenated, `{thing}-{action}` where possible (e.g. `base64-encode`, not `encode-base64`)
+- slugs: lowercase, hyphenated, `{thing}-{action}` where possible (e.g. `base64-encode`, not `encode-base64`), when a qualifier is needed for clarity, `{noun}-{thing}-{action}` (e.g `random-topic-generator`)
 - `title`: capitalized, human-readable
 - `description`: lowercase, terse, no trailing period
 
