@@ -1,6 +1,6 @@
 import { toClipboard } from "/assets/js/util.js";
 
-const TOPICS_CHUNK_COUNT = 1;		// Increment only when adding chunk!
+const TOPICS_CHUNK_COUNT = 2;		// Increment only when adding chunk!
 
 const output = document.getElementById("output");
 const genbtn = document.getElementById("generate");
