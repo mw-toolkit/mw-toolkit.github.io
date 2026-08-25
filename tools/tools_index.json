@@ -78,5 +78,10 @@
 		"id": "random-topic-generator",
 		"title": "Random Topic Generator",
 		"description": "generate a random topic from a dataset"
+	},
+	{
+		"id": "hash-generator",
+		"title": "Hash Generator",
+		"description": "generate a hash from an input"
 	}
 ]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mw-toolkit</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	<span>Input: </span><input type="text" id="input"></input>
+	<br>
+
+	<span>Algorithm: </span>
+	<select id="algorithm">
+		<option value="SHA-1">SHA-1</option>
+		<option value="SHA-256">SHA-256</option>
+		<option value="SHA-384">SHA-384</option>
+		<option value="SHA-512">SHA-512</option>
+	</select>
+	<button id="hash">Hash</button>
+
+	<p id="output"></p>
+	<button id="copy">Copy</button>
+	<script type="module" src="/tools/hash-generator/hashgen.js"></script>
+</body>
+
+</html>
