@@ -11,3 +11,7 @@ hash_el.addEventListener("click", async () => {
 	const hashArray = Array.from(new Uint8Array(hashBuf));
 	output_el.textContent = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
 });
+
+document.getElementById("copy").addEventListener("click", () => {
+	toClipboard(output_el.textContent);
+});
