@@ -1,10 +1,10 @@
 import { luhn } from "/assets/js/util.js"
 
-const input = document.getElementById("input");
-const validate = document.getElementById("validate");
+const input_el = document.getElementById("input");
+const validate_el = document.getElementById("validate");
 
-validate.addEventListener("click", () => {
-	let cleaned = input.value.replace(/\D/g, ''); // strips everything except digits
+validate_el.addEventListener("click", () => {
+	let cleaned = input_el.value.replace(/\D/g, ''); // strips everything except digits
 
 	// Get check digit and reverse
 	cleaned = cleaned.split('');

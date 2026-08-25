@@ -1,11 +1,11 @@
 import { toClipboard } from "/assets/js/util.js";
 
-const output = document.getElementById("output");
+const output_el = document.getElementById("output");
 
 document.getElementById("decbtn").addEventListener("click", () => {
-	output.value = atob(document.getElementById("input").value);
+	output_el.value = atob(document.getElementById("input").value);
 });
 
 document.getElementById("copy").addEventListener("click", () => {
-	toClipboard(output.value);
+	toClipboard(output_el.value);
 });

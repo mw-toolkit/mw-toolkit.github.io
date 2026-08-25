@@ -1,4 +1,4 @@
-const round = document.getElementById("round");
+const round_el = document.getElementById("round");
 
 function generate() {
 	const min = document.getElementById("min").valueAsNumber;
@@ -6,7 +6,7 @@ function generate() {
 
 	let n = Math.random() * (max - min + 1) + min;
 
-	if (round.checked) {
+	if (round_el.checked) {
 		n = Math.floor(n);
 	}
 	console.log(n);

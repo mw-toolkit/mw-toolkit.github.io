@@ -18,9 +18,9 @@ function shannonEntropy(str) {
 	};
 }
 
-const input = document.getElementById("input");
+const input_el = document.getElementById("input");
 
-input.addEventListener("input", () => {
+input_el.addEventListener("input", () => {
 	const { perCharacter, total } = shannonEntropy(input.value);
 
 	document.getElementById("perchar").innerHTML = "Entropy per-character: " + perCharacter;

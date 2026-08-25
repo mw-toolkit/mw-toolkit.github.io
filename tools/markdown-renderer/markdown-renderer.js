@@ -1,14 +1,14 @@
 import showdown from "https://cdn.jsdelivr.net/npm/showdown@2/+esm";
 
-const input = document.getElementById("input");
-const inputfile = document.getElementById("input-file");
+const input_el = document.getElementById("input");
+const inputfile_el = document.getElementById("input-file");
 let converter = new showdown.Converter();
 
 function render() {
 	document.getElementById("content").innerHTML = converter.makeHtml(input.value);
 }
 
-input.addEventListener("input", render);
+input_el.addEventListener("input", render);
 
 function handleFileSelection(event) {
 	const file = event.target.files[0];
@@ -29,4 +29,4 @@ function handleFileSelection(event) {
 }
 
 
-inputfile.addEventListener("change", handleFileSelection);
+inputfile_el.addEventListener("change", handleFileSelection);

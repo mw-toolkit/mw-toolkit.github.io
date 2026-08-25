@@ -1,13 +1,13 @@
 import { toClipboard } from '/assets/js/util.js';
 
-const regexinput = document.getElementById("regexinput");
-const input = document.getElementById("input")
-const output = document.getElementById("output");
-const output_info = document.getElementById("output-info");
+const regexinput_el = document.getElementById("regexinput");
+const input_el = document.getElementById("input")
+const output_el = document.getElementById("output");
+const output_info_el = document.getElementById("output-info");
 
 function handleChanges() {
-    output.innerHTML = "";
-    output_info.innerHTML = "";
+    output_el.innerHTML = "";
+    output_info_el.innerHTML = "";
 
     if (input.value == "" || regexinput.value == "") { return; }
     const matches = [...input.value.matchAll(regexinput.value)];
@@ -16,33 +16,33 @@ function handleChanges() {
     matches.forEach((m) => {
         matchc += 1;
 
-        const match = document.createElement("div");
-        match.classList.add("match");
+        const match_el = document.createElement("div");
+        match_el.classList.add("match");
 
         // Index
-        const matchi = document.createElement("p");
-        matchi.innerHTML = "Index: " + m.index;
-        matchi.classList.add("index");
-        match.appendChild(matchi);
+        const matchi_el = document.createElement("p");
+        matchi_el.innerHTML = "Index: " + m.index;
+        matchi_el.classList.add("index");
+        match_el.appendChild(matchi_el);
 
         // Match
-        const matchv = document.createElement("p");
-        matchv.innerHTML = "Match: " + m[0];
-        match.appendChild(matchv);
+        const matchv_el = document.createElement("p");
+        matchv_el.innerHTML = "Match: " + m[0];
+        match_el.appendChild(matchv_el);
 
         // Copy
-        const copy = document.createElement("button");
-        copy.innerHTML = "Copy";
-        copy.addEventListener("click", () => {
+        const copy_el = document.createElement("button");
+        copy_el.innerHTML = "Copy";
+        copy_el.addEventListener("click", () => {
             toClipboard(m[0]);
         });
-        match.appendChild(copy);
+        match_el.appendChild(copy_el);
 
-        output.appendChild(match);
+        output_el.appendChild(match_el);
     });
 
-    output_info.innerHTML = "Matches: " + matchc;
+    output_info_el.innerHTML = "Matches: " + matchc;
 }
 
-regexinput.addEventListener("input", handleChanges);
-input.addEventListener("input", handleChanges);
+regexinput_el.addEventListener("input", handleChanges);
+input_el.addEventListener("input", handleChanges);

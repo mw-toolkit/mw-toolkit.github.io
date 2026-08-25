@@ -1,4 +1,4 @@
-const banner = document.getElementById("banner");
+const banner_el = document.getElementById("banner");
 const titles = {
 	"/": "Welcome to mw-toolkit",
 	"/tools": "mw-toolkit tools index",
@@ -38,7 +38,7 @@ async function load() {
 
 	const title_el = document.createElement("h1");
 	title_el.innerHTML = titles[path];
-	banner.appendChild(title_el);
+	banner_el.appendChild(title_el);
 
 	if (title !== titles["/"]) {
 		document.getElementsByTagName("title")[0].innerHTML = "mw-toolkit - " + title;
@@ -48,12 +48,12 @@ async function load() {
 		const desc_el = document.createElement("p");
 		desc_el.id = "tooldesc";
 		desc_el.innerHTML = desc[path];
-		banner.appendChild(desc_el);
+		banner_el.appendChild(desc_el);
 	}
 
 	const links_el = document.createElement("div");
 	links_el.id = "links";
-	banner.appendChild(links_el);
+	banner_el.appendChild(links_el);
 
 	for (const key in links) {
 		const link = links[key];
