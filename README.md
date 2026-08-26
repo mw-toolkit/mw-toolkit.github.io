@@ -12,6 +12,7 @@ please read [CONTRIBUTING.md](CONTRIBUTING.md)
 
 - [Showdown](https://github.com/showdownjs/showdown): MIT License
 - [JetBrains Mono](https://github.com/JetBrains/JetBrainsMono): SIL Open Font License 1.1
+- [qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator): MIT License
 
 ## License
 
