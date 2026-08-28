@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mw-toolkit</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	<span>Data:</span>
+	<input id="data"></input><br>
+
+	<span>Cell size:</span>
+	<input type="number" id="cellSize" value="4"></input><br>
+
+	<span>Error correction level:</span>
+	<select id="errCorrectionLevel">
+		<option value="L">L</option>
+		<option value="M">M</option>
+		<option value="Q">Q</option>
+		<option value="H">H</option>
+	</select><br>
+
+	<button id="generate">Generate</button><br>
+
+	<canvas id="output_canvas" width="0" height="0"></canvas><br>
+
+	<p>
+	The word 'QR Code' is registered trademark of DENSO WAVE INCORPORATED<br>
+	<a href="http://www.denso-wave.com/qrcode/faqpatent-e.html" target="_blank" rel="noopener noreferrer">Click here for more information</a>
+	</p>
+
+	<script src="/assets/js/qrcode.js"></script>
+	<script type="module" src="/tools/qrcode-generator/qrcode-gen.js"></script>
+</body>
+
+</html>
