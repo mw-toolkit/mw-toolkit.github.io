@@ -111,3 +111,10 @@ export function decimalToTime(n) {
 
 	return `${zeroPad(displayHour)}:${zeroPad(minute)} ${period}`;
 }
+
+export function downloadCanvas(canvas, filename) {
+	var link = document.createElement("a");
+	link.download = filename || "image.png";
+	link.href = canvas.toDataURL("image/png");
+	link.click();
+}

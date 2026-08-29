@@ -74,3 +74,7 @@ async function load() {
 }
 
 load();
+
+function toggle_hidden(classname) {
+	document.querySelector(classname).hidden ^= true;
+}

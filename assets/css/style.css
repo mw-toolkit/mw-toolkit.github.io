@@ -99,3 +99,12 @@ tr:nth-child(even) {
 .flexone {
 	flex: 1;
 }
+
+.info {
+	background-color: #1e1e2e;
+	border: 5px solid #3a3a4a;
+	border-radius: 4px;
+	padding: 0.75rem 1rem;
+	margin-top: 0.5rem;
+	max-width: 400px;
+}

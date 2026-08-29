@@ -25,9 +25,27 @@
 		<option value="M">M</option>
 		<option value="Q">Q</option>
 		<option value="H">H</option>
-	</select><br>
+	</select>
+	<a href="javascript:toggle_hidden('.errCorrectionLevel_info')">info</a>
+	<div class="info errCorrectionLevel_info" hidden>
+		The error correction level (L, M, Q H) is an algorithm
+		that adds redundant backup data to the QR Code pattern,
+		It essentially creates duplicates parts of data and spreads
+		them throughout the code and use the backup data to
+		reconstruct missing pieces and recover the original
+		complete message.
 
-	<button id="generate">Generate</button><br>
+		<br><br>
+		Error correction capability for each level<br>
+		L (Low): ~7%<br>
+		M (Medium): ~15%<br>
+		Q (Quartile): ~25%<br>
+		H (High): ~30%<br>
+	</div>
+	<br>
+
+	<button id="generate">Generate</button>
+	<button id="downloadImg" hidden>Download</button><br>
 
 	<canvas id="output_canvas" width="0" height="0"></canvas><br>
 
