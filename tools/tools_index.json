@@ -83,5 +83,10 @@
 		"id": "hash-generator",
 		"title": "Hash Generator",
 		"description": "generate a hash from an input"
+	},
+	{
+		"id": "qrcode-generator",
+		"title": "QR Code Generator",
+		"description": "generate a qr code"
 	}
 ]
