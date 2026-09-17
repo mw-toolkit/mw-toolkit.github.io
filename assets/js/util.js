@@ -9,6 +9,10 @@ export function arrayIntersection(a, b) {
 	return a.filter((v) => b.includes(v));
 }
 
+export function rng(min, max) {
+	return Math.random() * (max - min + 1) + min;
+}
+
 // Luhn algorithm
 export function luhn(num) {
 	let sum = 0;
@@ -94,7 +98,7 @@ export function timeOffset(local, offset) {
 }
 
 export function zeroPad(n, width = 2) {
-    return String(n).padStart(width, '0');
+	return String(n).padStart(width, '0');
 }
 
 export function decimalToTime(n) {
