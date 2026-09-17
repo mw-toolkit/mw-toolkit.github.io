@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>mw-toolkit</title>
+
+	<link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+	<div id="banner"></div>
+	<script src="/assets/js/loader.js"></script>
+
+	<span>Minimum value: </span> <input type="number" id="minv" value="2"></input> <br>
+	<span>Maximum value: </span> <input type="number" id="maxv" value="10"></input> <br>
+	<span>Minimum coefficient: </span> <input type="number" id="minc" value="2"></input> <br>
+	<span>Maximum coefficient: </span> <input type="number" id="maxc" value="5"></input> <br>
+	<span>Variable count: </span> <input type="number" id="var_count" min="1" max="25" value="2"></input> <br>
+	<span>Equation count: </span> <input type="number" id="eq_count" value="2"></input> <br>
+	<button id="generate">Generate</button>
+
+	<ul id="equations"></ul>
+
+	<script type="module" src="/tools/linear-equation-generator/linear-equation-gen.js"></script>
+</body>
+
+</html>
