@@ -60,7 +60,7 @@
 		"description": "convert a number between bases"
 	},
 	{
-	 	"id": "regex-tester",
+		"id": "regex-tester",
 		"title": "Regex Tester",
 		"description": "test regex"
 	},
@@ -88,5 +88,10 @@
 		"id": "qrcode-generator",
 		"title": "QR Code Generator",
 		"description": "generate a qr code"
+	},
+	{
+		"id": "linear-equation-generator",
+		"title": "Linear Equation Generator",
+		"description": "generate a random linear equation with configurable coefficient and variable ranges"
 	}
 ]
