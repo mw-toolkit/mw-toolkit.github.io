@@ -17,8 +17,18 @@
 	<select id="system" value="metric">
 		<option value="metric">Metric</option>
 		<option value="imperial">Imperial</option>
-	</select>
-	<script type="module" src="/tools/bmi-calculator/bmi-calculator.js"></script>
+	</select> <br>
+
+	<label id="height-label" for="height">Height (<span id="height-unit">m</span>): </label>
+	<input id="height" type="number"> <br>
+
+	<label id="weight-label" for="weight">Weight (<span id="weight-unit">kg</span>): </label>
+	<input id="weight" type="number"> <br>
+	<button id="calculate">Calculate</button> <br>
+
+	<p id="result"></p>
+
+	<script src="/tools/bmi-calculator/bmi-calculator.js"></script>
 </body>
 
 </html>
