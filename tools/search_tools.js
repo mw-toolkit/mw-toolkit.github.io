@@ -26,6 +26,9 @@ async function show_tools(s) {
 		entry.appendChild(link);
 		toolsl.appendChild(entry);
 	});
+
+	document.getElementById("stat")
+		.innerText = `${filtered.length} tools found`;
 }
 
 show_tools("");
