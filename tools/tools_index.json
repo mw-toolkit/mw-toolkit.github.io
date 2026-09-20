@@ -98,5 +98,10 @@
 		"id": "bmi-calculator",
 		"title": "BMI Calculator",
 		"description": "calculate BMI"
+	},
+	{
+		"id": "click-counter",
+		"title": "Click Counter",
+		"description": "a button that count your clicks"
 	}
 ]
