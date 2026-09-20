@@ -20,15 +20,15 @@
 	</select> <br>
 
 	<label id="height-label" for="height">Height (<span id="height-unit">m</span>): </label>
-	<input id="height" type="number"> <br>
+	<input id="height" type="number" min="0"> <br>
 
 	<label id="weight-label" for="weight">Weight (<span id="weight-unit">kg</span>): </label>
-	<input id="weight" type="number"> <br>
+	<input id="weight" type="number" min="0"> <br>
 	<button id="calculate">Calculate</button> <br>
 
 	<p id="result"></p>
 
-	<script src="/tools/bmi-calculator/bmi-calculator.js"></script>
+	<script type="module" src="/tools/bmi-calculator/bmi-calculator.js"></script>
 </body>
 
 </html>
