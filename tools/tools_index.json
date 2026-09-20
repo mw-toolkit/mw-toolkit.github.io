@@ -93,5 +93,10 @@
 		"id": "linear-equation-generator",
 		"title": "Linear Equation Generator",
 		"description": "generate a random linear equation with configurable coefficient and variable ranges"
+	},
+	{
+		"id": "bmi-calculator",
+		"title": "BMI Calculator",
+		"description": "calculate BMI"
 	}
 ]
