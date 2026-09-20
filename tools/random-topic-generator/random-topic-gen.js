@@ -6,7 +6,7 @@ const output_el = document.getElementById("output");
 const genbtn_el = document.getElementById("generate");
 const openwiki_el = document.getElementById("openwiki");
 
-genbtn.addEventListener("click", () => {
+genbtn_el.addEventListener("click", () => {
 	genbtn_el.disabled = true;
 	openwiki_el.hidden = false;
 
